@@ -1,0 +1,16 @@
+
+查看状态
+git status -s
+
+查看分支
+git branch
+
+
+创建分支
+git checkout master -b daily-5-4
+
+
+
+
+
+
