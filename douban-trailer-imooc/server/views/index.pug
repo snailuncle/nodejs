@@ -86,6 +86,20 @@ block content
 
 
   include ./includes/header
+
+  //- 电影  "D:/Documents/Downloads/180625105605186006.mp4"
+  //- 图片   "D:/Documents/Downloads/p2524036950.webp"
+
+  //- 原始电影  'http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4'
+  //- 原始图片  'https://img3.doubanio.com/view/photo/l/public/p2524036950.webp'
+  //- "file:///E|/html/abc.jpg"
+  //- - var src = '**/**.png'
+  //- body
+  //- img(src=src)
+
+  - var videoPath = "http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4";
+  //- - var imgPath = "file://D:/Documents/Downloads/p2524036950.webp";
+  - var imgPath = "https://img3.doubanio.com/view/photo/l/public/p2524036950.webp";
   .container-fluid
     .row
       .col-12.col-md-3.col-xl-2.sidebar
@@ -98,10 +112,12 @@ block content
               li.sidebar-inner-active
                 a(href='/') Link2
       .col-12.col-md-9.col-xl-9.py-md-3.pl-md-5.content
+
+
         .row
           .col-md-6
             .card
-              img.card-img-top(src='https://img3.doubanio.com/view/photo/l/public/p2524036950.webp',data-video='http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4')
+              img.card-img-top(src!=imgPath,alt!=imgPath,data-video!=videoPath)
               .card-body
                 h4.card-title 这是电影标题
                 p.card-desc 这是电影描述
@@ -109,7 +125,7 @@ block content
                 small.text-muted 1天前更新
           .col-md-6
             .card
-              img.card-img-top(src='https://img3.doubanio.com/view/photo/l/public/p2524036950.webp',data-video='http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4')
+              img.card-img-top(src!=imgPath,alt!=imgPath,data-video!=videoPath)
               .card-body
                 h4.card-title 这是电影标题
                 p.card-desc 这是电影描述
@@ -118,7 +134,7 @@ block content
         .row
           .col-md-6
             .card
-              img.card-img-top(src='https://img3.doubanio.com/view/photo/l/public/p2524036950.webp',data-video='http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4')
+              img.card-img-top(src!=imgPath,alt!=imgPath,data-video!=videoPath)
               .card-body
                 h4.card-title 这是电影标题
                 p.card-desc 这是电影描述
@@ -126,7 +142,7 @@ block content
                 small.text-muted 1天前更新
           .col-md-6
             .card
-              img.card-img-top(src='https://img3.doubanio.com/view/photo/l/public/p2524036950.webp',data-video='http://vfx.mtime.cn/Video/2018/06/25/mp4/180625105605186006.mp4')
+              img.card-img-top(src!=imgPath,alt!=imgPath,data-video!=videoPath)
               .card-body
                 h4.card-title 这是电影标题
                 p.card-desc 这是电影描述
