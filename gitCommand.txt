@@ -5,9 +5,25 @@ git status -s
 查看分支
 git branch
 
-
 创建分支
 git checkout master -b daily-5-4
+
+提交到暂存区
+git add .
+
+提交评论
+git commit -m 'feat:增加模板引擎中间件'
+
+推送到分支
+git push origin daily-5-4
+
+
+git checkout master
+
+git merge origin/daily-5-4
+
+git push origin master
+
 
 
 
