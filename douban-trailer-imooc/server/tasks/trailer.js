@@ -18,6 +18,7 @@ const {resolve}=require('path')
   })
 
   child.on('message',data=>{
+    // https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg
     console.log(data)
   })
 
