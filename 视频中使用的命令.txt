@@ -46,3 +46,12 @@ node-gyp --python "C:/Users/Administrator/.windows-build-tools/python27/python"
 npm config set python "C:/Users/Administrator/.windows-build-tools/python27/python"
 
 npm i bcrypt -S
+
+npm i glob -S
+npm i mongoose -S
+
+npm start
+
+npm i babel-cli babel-preset-env -D --registry=https://registry.npm.taobao.org
+
+set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
