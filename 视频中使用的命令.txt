@@ -25,3 +25,24 @@ npm list --depth=0
 8-5 创建电影的数据模型
 
 nodejs线上服务器部署与发布
+
+npm install bcrypt --save
+npm i bcrypt -S
+
+require(“bcrypt”)改为require(“bcrypt-nodejs”)。。。
+
+npm install -g node-gyp
+
+npm install --global --production windows-build-tools
+
+Downloaded python-2.7.14.msi. Saved to C:/Users/Administrator/.windows-build-tools/python-2.7.14.msi.
+
+"C:/Users/Administrator/.windows-build-tools/python27/python.exe"
+
+node-gyp --python /path/to/python2.7
+npm config set python /path/to/executable/python2.7
+
+node-gyp --python "C:/Users/Administrator/.windows-build-tools/python27/python"
+npm config set python "C:/Users/Administrator/.windows-build-tools/python27/python"
+
+npm i bcrypt -S
