@@ -1,2 +1,0 @@
-# nodejs
-git so hard
