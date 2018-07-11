@@ -25,7 +25,7 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
     // executablePath: 'D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/crawler/chromium/chrome.exe',
     // executablePath: './chromium/chrome.exe',
     executablePath: chromePath,
-    headless: false,
+    // headless: false,
     args:['--no-sandbox'],
     dumpio:false
   })

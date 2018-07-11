@@ -11,9 +11,10 @@ console.log("index.js666开始运行")
   await connect()
   console.log("连接成功")
   initSchemas();
-  const Movie=mongoose.model('Movie')
-  const movies=await Movie.find({})
-  console.log(movies)
+
+  // require('./tasks/movie')
+  require('./tasks/api')
+
 })()
 
 console.log("创建koa之前")

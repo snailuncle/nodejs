@@ -7,22 +7,22 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-11-5-成功连接mongo
+git checkout master -b daily-7-11-6-爬取豆瓣电影多条信息
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m '成功连接mongo'
+git commit -m '爬取豆瓣电影多条信息'
 
 推送到分支
-git push origin daily-7-11-5-成功连接mongo
+git push origin daily-7-11-6-爬取豆瓣电影多条信息
 
 
 
 git checkout master
 
-git merge daily-7-11-5-成功连接mongo
+git merge daily-7-11-6-爬取豆瓣电影多条信息
 
 git merge origin/daily-5-4
 
