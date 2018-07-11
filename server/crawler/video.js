@@ -1,3 +1,4 @@
+const {resolve}=require('path')
 const puppeteer=require('puppeteer')
 const base='https://movie.douban.com/subject/'
 const doubanId="10574622"
@@ -22,8 +23,15 @@ const sleep=time=>new Promise(resolve=>{
 
 
 
+var chromePath=resolve(__dirname,'./chromium/chrome.exe')
+
 ;(async()=>{
+  // console.log("当前目录=",__dirname)
   const browser=await puppeteer.launch({
+    // executablePath: 'D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/crawler/chromium/chrome.exe',
+    // executablePath: './chromium/chrome.exe',
+    executablePath: chromePath,
+    // headless: false,
     args:['--no-sandbox'],
     dumpio:false
   })
@@ -70,6 +78,13 @@ const sleep=time=>new Promise(resolve=>{
       return ''
     })
   }
+
+  // const data={
+  //   video:video,
+  //   doubanId:doubanId,
+  //   cover:result.cover
+  // }
+
   const data={
     video,
     doubanId,
@@ -78,9 +93,9 @@ const sleep=time=>new Promise(resolve=>{
 
 
   browser.close()
-  process.send(data)
-  process.exit(0)
-  // console.log(result)
+  // process.send(data)
+  // process.exit(0)
+  console.log("result=",data)
 })()
 
 
