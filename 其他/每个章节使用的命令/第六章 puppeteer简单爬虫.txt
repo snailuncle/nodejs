@@ -1,0 +1,16 @@
+
+
+npm i puppeteer -S --registry=https://registry.npm.taobao.org
+
+set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+
+ node server\tasks\movie.js
+
+ npm i request-promise-native -S
+
+npm i request -S --registry=https://registry.npm.taobao.org
+
+node server/tasks/api
+node server/tasks/movie.js
+
+npm i qiniu nanoid -S --registry=https://registry.npm.taobao.org

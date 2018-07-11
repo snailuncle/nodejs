@@ -1,0 +1,7 @@
+查看安装了哪些版本
+nvm ls
+
+查看版本
+node -v
+初始化nodejs
+npm init

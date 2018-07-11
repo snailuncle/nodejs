@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 const Schema=mongoose.Schema
-const {Mixed,ObjectId}=Schema
+const {Mixed,ObjectId}=Schema.Types
 
 const movieSchema=new Schema({
   doubanId:{
