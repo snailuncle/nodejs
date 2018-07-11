@@ -11,7 +11,7 @@ const {resolve}=require('path')
 
 ;(async()=>{
   const script=resolve(__dirname,'../crawler/trailer-list')
-  console.log(process.env.PATH)
+  // console.log(process.env.PATH)
   const child=cp.fork(script,[])
   let invoked=false
   child.on('error',err=>{

@@ -46,6 +46,32 @@
 //         index  index.html index.htm;
 //     }
 
+// { doubanId: '1292052',
+//     title: '肖申克的救赎',
+//     rate: 9.6,
+//     poster:
+//      'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p480747492.jpg' },
+// { doubanId: '1295644',
+//   title: '这个杀手不太冷',
+//   rate: 9.4,
+//   poster:
+//     'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg' },
+// { doubanId: '1292720',
+//   title: '阿甘正传',
+//   rate: 9.4,
+//   poster:
+//     'https://img1.doubanio.com/view/photo/l_ratio_poster/public/p510876377.jpg' },
+
+
+
+
+
+
+
+
+
+
+
 let movies=[{
   video:'http://vt1.doubanio.com/201806282323/bc9d39b0cd7a699b15353370e28bde4e/view/movie/M/301270263.mp4',
   doubanId: '10574622',
@@ -98,11 +124,29 @@ const uploadToQiniu=async(url,key)=>{
 
 
 ;(async()=>{
+
+
+// { doubanId: '1295644',
+//   title: '这个杀手不太冷',
+//   rate: 9.4,
+//   poster:
+//     'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg' },
+
+// result= { video:
+//   'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+//  doubanId: '1295644',
+//  cover:
+//   'background-image:url(https://img1.doubanio.com/img/trailer/medium/1433855508.jpg?)' }
+
+
+
+
+
   let movies=[{
-    video:'http://vt1.doubanio.com/201806282323/bc9d39b0cd7a699b15353370e28bde4e/view/movie/M/301270263.mp4',
-    doubanId: '10574622',
-    poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg',
-    cover:'https://img3.doubanio.com/img/trailer/medium/1805269102.jpg'
+    video:'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+    doubanId: '1295644',
+    poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
+    cover:'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg'
   }]
   movies.map(async movie=>{
     if(movie.video && !movie.key){
@@ -124,15 +168,16 @@ const uploadToQiniu=async(url,key)=>{
         }
         console.log(movie)
 
-        {
-            video:'http://vt1.doubanio.com/201806282323/bc9d39b0cd7a699b15353370e28bde4e/view/movie/M/301270263.mp4',
-            doubanId: '10574622',
-            poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg',
-            cover:'https://img3.doubanio.com/img/trailer/medium/1805269102.jpg',
-            videoKey: 'http://video.xiaoxinfeng.com.cn/R_zqaTw6wiD1CxkvUHFek.mp4',
-            coverKey: 'http://video.xiaoxinfeng.com.cn/J3~QrT_2s1Dc0MArpmWN9.jpg',
-            posterKey: 'http://video.xiaoxinfeng.com.cn/QheC3qRwWdxbdhGnB51hS.png'
-        }
+        // { video:
+        //   'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+        //  doubanId: '1295644',
+        //  poster:
+        //   'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
+        //  cover:
+        //   'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg',
+        //  videoKey: 'http://video.xiaoxinfeng.com.cn/u29audFprGTTD967wO75h.mp4',
+        //  coverKey: 'http://video.xiaoxinfeng.com.cn/TE_dEtEGkFJRDUzREPL0m.jpg',
+        //  posterKey: 'http://video.xiaoxinfeng.com.cn/pz7vIINqnwRHUEbaqvpRT.png' }
 
 
 

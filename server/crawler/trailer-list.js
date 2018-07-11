@@ -15,6 +15,8 @@ const sleep=time=>new Promise(resolve=>{
 //   await process.exit(1)
 // })();
 
+// https://img3.doubanio.com/view/photo/l_ratio_poster/public/p480747492.jpg
+
 var chromePath=resolve(__dirname,'./chromium/chrome.exe')
 
 ;(async()=>{

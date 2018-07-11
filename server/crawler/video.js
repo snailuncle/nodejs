@@ -1,7 +1,7 @@
 const {resolve}=require('path')
 const puppeteer=require('puppeteer')
 const base='https://movie.douban.com/subject/'
-const doubanId="10574622"
+const doubanId="1295644"
 const videoBase=`https://movie.douban.com/trailer/108756`
 
 const sleep=time=>new Promise(resolve=>{
