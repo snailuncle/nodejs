@@ -1,9 +1,9 @@
 const puppeteer=require('puppeteer')
+const {resolve}=require('path')
 const url='https://movie.douban.com/tag/#/?sort=T&range=6,10&tags='
 const sleep=time=>new Promise(resolve=>{
   setTimeout(resolve,time)
 })
-
 
 // ;(async () => {
 //   const browser = await puppeteer.launch();
@@ -15,12 +15,15 @@ const sleep=time=>new Promise(resolve=>{
 //   await process.exit(1)
 // })();
 
-
-
-
+var chromePath=resolve(__dirname,'./chromium/chrome.exe')
 
 ;(async()=>{
+  // console.log("当前目录=",__dirname)
   const browser=await puppeteer.launch({
+    // executablePath: 'D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/crawler/chromium/chrome.exe',
+    // executablePath: './chromium/chrome.exe',
+    executablePath: chromePath,
+    headless: false,
     args:['--no-sandbox'],
     dumpio:false
   })
@@ -67,9 +70,9 @@ const sleep=time=>new Promise(resolve=>{
   })
 
   browser.close()
+  console.log(result)
   process.send({result})
   process.exit(0)
-  // console.log(result)
 })()
 
 
