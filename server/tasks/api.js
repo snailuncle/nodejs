@@ -1,11 +1,17 @@
 const mongoose=require('mongoose')
 const Movie=mongoose.model('Movie')
+console.log("Movie=",Movie)
 const Category=mongoose.model('Category')
 
 
 
+console.log("api运行了api运行了api运行了api运行了api运行了api运行了api运行了api运行了api运行了")
+
 // http://api.douban.com/v2/movie/subject/1764796
 // npm i request -S --registry=https://registry.npm.taobao.org
+
+
+
 
 const rp=require('request-promise-native')
 async function fetchMovie(item){
@@ -48,7 +54,9 @@ let movies=await Movie.find({
   ]
 })
 
-for(let i=0;i<movies.length;i++){
+for(let i=0;i<[movies[0]].length;i++){
+  console.log("movies的一次循环")
+// for(let i=0;i<movies.length;i++){
   let movie=movies[i]
   let movieData=await fetchMovie(movie)
   if(movieData){

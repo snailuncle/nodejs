@@ -3,7 +3,7 @@ const db='mongodb://localhost/douban-test'
 const glob=require('glob')
 const {resolve}=require('path')
 
-
+console.log("database/init.js执行了")
 mongoose.Promise=global.Promise
 
 
