@@ -1,5 +1,7 @@
 auto();
 
+
+
 //请求截图
 if(!requestScreenCapture()){
   toast("请求截图失败");
@@ -41,7 +43,7 @@ idiomOriginalLength=idiomOriginal.length-2
 
 
 
-for(let i=0;i<20;i++){
+for(let i=0;i<15;i++){
   collectWordsResult=collectWords()
   //采集到的随机汉字
   randomChineseCharacter=collectWordsResult[0]
@@ -457,7 +459,9 @@ function collectWords(){
   let words=""
   // var cc=className("android.view.View").bounds(132,822,258,948).find()
   // var cc=className("android.view.View").boundsContains( 115,  806,964, 1375,).find()
-  var cc=className("android.view.View").boundsContains(128,798,968,1218).find()
+  // var cc=className("android.view.View").boundsContains(128,798,968,1218).find()
+  // var cc=className("android.view.View").boundsContains(  114,  765, 966, 1320).find()
+  var cc=className("android.view.View").boundsContains(129,792,966,1209).find()
   // log("cc=",cc)
 
   // cc.forEach(function(element) {
