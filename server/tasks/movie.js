@@ -12,6 +12,7 @@ const Movie=mongoose.model('Movie')
 
 
 ;(async()=>{
+  console.log("server\tasks\movie.js被调用了------------------------------------------------------------------------------------------------------------------------------------------")
   const script=resolve(__dirname,'../crawler/trailer-list')
   // console.log(process.env.PATH)
   const child=cp.fork(script,[])

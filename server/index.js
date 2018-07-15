@@ -4,13 +4,17 @@ const views=require('koa-views') //
 const {resolve}=require('path')
 const {initSchemas,connect}=require('./database/init')
 
+
+
 console.log("index.js666开始运行")
 ;(async()=>{
 
   console.log("开始连接")
   await connect()
   console.log("连接成功")
+  console.log("开始初始化schema")
   initSchemas();
+  console.log("结束初始化schema")
 
   // require('./tasks/movie')
   console.log("api前面api前面api前面api前面api前面api前面api前面api前面")
@@ -27,11 +31,21 @@ console.log("index.js666开始运行")
 console.log("创建koa之前")
 const app=new Koa()
 console.log("创建koa之后")
+console.log(resolve(__dirname,'./views'))
+// console.log("(views('D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/views',{  extension:'pug'}))=",app.use(()=>{}))
+
+
+// (views('D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/views',{  extension:'pug'}))
 
 
 app.use(views(resolve(__dirname,'./views'),{
   extension:'pug'
 }))
+
+
+// //-----------------------------------------------------------------
+// process.exit()
+// //-----------------------------------------------------------------
 
 app.use(async(ctx,next)=>{
   await ctx.render('index',{
@@ -41,7 +55,12 @@ app.use(async(ctx,next)=>{
 })
 app.listen(4455)
 
+console.log("app=")
+console.log(app)
 
+//-----------------------------------------------------------------
+// process.exit()
+//-----------------------------------------------------------------
 
 
 

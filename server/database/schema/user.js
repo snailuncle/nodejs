@@ -1,3 +1,6 @@
+console.log("douban/server/database/schema/user.js被调用了")
+
+
 const mongoose=require('mongoose')
 const bcrypt=require('bcrypt')
 const Schema=mongoose.Schema

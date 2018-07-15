@@ -1,10 +1,11 @@
+console.log("douban/server/database/schema/movie.js被调用了")
+
+
+
 const mongoose=require('mongoose')
 const Schema=mongoose.Schema
 const {Mixed,ObjectId}=Schema.Types
 
-
-
-console.log("database/schema/movie.js执行了")
 
 
 
