@@ -1,1 +1,6 @@
 npm i koa-router -S --registry=https://registry.npm.taobao.org
+
+
+npm i babel-plugin-transform-class-properties babel-plugin-transform-decorators-legacy babel-plugin-transform-react-remove-prop-types babel-plugin-transform-runtime babel-preset-env babel-preset-react babel-preset-stage-0 parcel-bundler --dev
+
+npm i babel-core babel-polyfill -D

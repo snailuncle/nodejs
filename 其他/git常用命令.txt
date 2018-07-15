@@ -7,22 +7,22 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-11-6-爬取豆瓣电影多条信息
+git checkout master -b daily-7-16-装饰器的简单例子
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m '爬取豆瓣电影多条信息'
+git commit -m 'daily-7-16-装饰器的简单例子'
 
 推送到分支
-git push origin daily-7-11-6-爬取豆瓣电影多条信息
+git push origin daily-7-16-装饰器的简单例子
 
 
 
 git checkout master
 
-git merge daily-7-15-正常给电影添加标签
+git merge daily-7-16-装饰器的简单例子
 
 git merge origin/daily-5-4
 
