@@ -58,8 +58,8 @@ async function fetchMovie(item){
     ]
   })
   console.log("movies=",movies)
-  for(let i=0;i<movies.length;i++){
-  // for(let i=0;i<[movies[0]].length;i++){
+  // for(let i=0;i<movies.length;i++){
+  for(let i=0;i<[movies[0]].length;i++){
     console.log("movies的一次循环")
     //-----------------------------------------------------------------
     // process.exit()

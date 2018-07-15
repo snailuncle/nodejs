@@ -16,6 +16,7 @@
     "bcrypt": "^3.0.0",
     "glob": "^7.1.2",
     "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
     "koa-views": "^6.1.4",
     "mongoose": "^5.2.2",
     "nanoid": "^1.0.7",

@@ -4,7 +4,7 @@ const views=require('koa-views') //
 const {resolve}=require('path')
 const {initSchemas,connect}=require('./database/init')
 
-
+const router=require('./routes')
 
 console.log("index.js666开始运行")
 ;(async()=>{
@@ -36,6 +36,14 @@ console.log(resolve(__dirname,'./views'))
 
 
 // (views('D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/views',{  extension:'pug'}))
+
+
+
+//路由
+app
+  .use(router.routes())
+  .use(router.allowedMethods())
+
 
 
 app.use(views(resolve(__dirname,'./views'),{
