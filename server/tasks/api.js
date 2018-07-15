@@ -21,9 +21,12 @@ async function fetchMovie(item){
   const url=`http://api.douban.com/v2/movie/${item.doubanId}`
   console.log('url=',url)
   const res=await rp(url)
+  // console.log("res=await rp(url)=",res)
   let body
   try{
     body=JSON.parse(res)
+    console.log("body=JSON.parse(res)=",body)
+
   }catch(err){
     console.log(err)
   }
@@ -58,9 +61,10 @@ async function fetchMovie(item){
     ]
   })
   console.log("movies=",movies)
-  // for(let i=0;i<movies.length;i++){
-  for(let i=0;i<[movies[0]].length;i++){
+  for(let i=0;i<movies.length;i++){
+  // for(let i=0;i<[movies[0]].length;i++){
     console.log("movies的一次循环")
+    console.log("movie[0]=",movies[0])
     //-----------------------------------------------------------------
     // process.exit()
     //-----------------------------------------------------------------
@@ -129,8 +133,8 @@ async function fetchMovie(item){
       tags.forEach(tag=>{
         movie.tags.push(tag.name)
       })
-      console.log(movie)
-      // await movie.save()
+      // console.log(movie)
+      await movie.save()
 
     }
   }
