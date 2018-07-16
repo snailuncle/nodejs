@@ -1,0 +1,7 @@
+npm run build
+
+npm i cssnext node-sass autoprefixer -D --registry=https://registry.npm.taobao.org
+
+npm run build
+
+npm i nodemon -D --registry=https://registry.npm.taobao.org

@@ -18,6 +18,7 @@ export class Route{
       const controllers=isArray(controller)
       const prefixPath=conf.target[symbolPrefix]
       if(prefixPath) prefixPath=normalizePath(prefixPath)
+      console.log("server/lib/decorator.js conf.path=",conf.path)
       const routerPath=prefixPath+conf.path
       this.router[conf.method](routerPath,...controllers)
     }
