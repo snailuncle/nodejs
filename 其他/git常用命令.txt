@@ -19,13 +19,16 @@ git commit -m 'daily-7-16-api可查询所有电影'
 git push origin daily-7-16-api可查询所有电影
 
 
-
+切换主干
 git checkout master
 
+本地合并分支到主干
 git merge daily-7-16-api可查询所有电影
 
-git merge origin/daily-5-4
+远端合并分支到主干
+git merge origin/daily-7-16-api可查询所有电影
 
+推送主干
 git push origin master
 
 
