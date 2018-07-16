@@ -57,15 +57,18 @@ async function fetchMovie(item){
       {summary:''}
     ]
   })
+  //这里movies是空的
+  //----------------------------------------------------------------------------------
   console.log("movies=",movies)
-  // for(let i=0;i<movies.length;i++){
-  for(let i=0;i<[movies[0]].length;i++){
+  for(let i=0;i<movies.length;i++){
+  // for(let i=0;i<[movies[0]].length;i++){
     console.log("movies的一次循环")
     //-----------------------------------------------------------------
     // process.exit()
     //-----------------------------------------------------------------
   // for(let i=0;i<movies.length;i++){
     let movie=movies[i]
+    console.log("server/tasks/api.js movie=",movie)
     let movieData=await fetchMovie(movie)
     if(movieData){
       let tags=movieData.tags || []

@@ -15,7 +15,6 @@ exports.initSchemas=()=>{
   console.log("mongo数据库所有对象的模型的初始化结束")
 }
 
-
 exports.connect=()=>{
   console.log("database/init.js/connect被调用了")
 

@@ -7,22 +7,22 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-16-装饰器的简单例子
+git checkout master -b daily-7-16-api可查询所有电影
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m 'daily-7-16-装饰器的简单例子'
+git commit -m 'daily-7-16-api可查询所有电影'
 
 推送到分支
-git push origin daily-7-16-装饰器的简单例子
+git push origin daily-7-16-api可查询所有电影
 
 
 
 git checkout master
 
-git merge daily-7-16-装饰器的简单例子
+git merge daily-7-16-api可查询所有电影
 
 git merge origin/daily-5-4
 
