@@ -42,7 +42,40 @@ const router = conf => (target, key, descriptor) => {
   }, target[key])
 }
 
-export const controller = path => target => (target.prototype[symbolPrefix] = path)
+export const controller=path=>target=>(target.prototype[symbolPrefix]=path)
+
+export const controller = path => {
+  console.log("path=",path)
+  return function(target){
+    console.log("target=",target)
+    target.prototype[symbolPrefix] = path
+    console.log("target=",target)
+
+  }
+}
+
+
+path= /api/v0/movies
+target= function movieController() {
+    (0, _classCallCheck3.default)(this, movieController);
+  }
+target= function movieController() {
+    (0, _classCallCheck3.default)(this, movieController);
+  }
+path= /api/v0/user
+target= function userController() {
+    (0, _classCallCheck3.default)(this, userController);
+  }
+target= function userController() {
+    (0, _classCallCheck3.default)(this, userController);
+  }
+
+
+
+
+
+
+
 
 export const get = path => router({
   method: 'get',

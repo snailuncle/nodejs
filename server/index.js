@@ -7,6 +7,18 @@ const R = require('ramda')
 const MIDDLEWARES = ['router', 'parcel']
 
 
+// const main = ctx => {
+//   if (ctx.request.path !== '/') {
+//     ctx.response.type = 'html';
+//     ctx.response.body = '<a href="/">Index Page</a>';
+//   } else {
+//     ctx.response.body = 'Hello World';
+//   }
+// };
+
+
+
+
 const useMiddlewares = (app) => {
   R.map(
     R.compose(
@@ -19,20 +31,35 @@ const useMiddlewares = (app) => {
   )(MIDDLEWARES)
 }
 
-;(async () => {
-  await connect()
+// ;(async () => {
+//   await connect()
+//   initSchemas()
+//   await initAdmin()
+//   const app = new Koa()
+//   await useMiddlewares(app)
 
-  initSchemas()
+//   // console.log("ctx.request.path=",ctx.request.path)
 
-  await initAdmin()
+//   // console.log(`${ctx.request.method} ${ctx.request.url}`); // 打印URL
 
-  // require('./tasks/movie')
-  // require('./tasks/api')
-  // require('./tasks/trailer')
-  // require('./tasks/qiniu')
+//   app.listen(4455)
 
-  const app = new Koa()
-  await useMiddlewares(app)
+//   await next();
+// })()
 
-  app.listen(4455)
-})()
+
+
+
+
+connect()
+initSchemas()
+initAdmin()
+const app = new Koa()
+useMiddlewares(app)
+app.use(async (ctx, next) => {
+  console.log(`${ctx.request.method} ${ctx.request.url}`); // 打印URL
+  await next(); // 调用下一个middleware
+});
+app.listen(4455)
+
+
