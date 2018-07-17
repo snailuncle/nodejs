@@ -1,70 +1,57 @@
-console.log("douban/server/database/schema/movie.js被调用了")
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const { ObjectId, Mixed } = Schema.Types
 
+const movieSchema = new Schema({
+  doubanId: {
+    unique: true,
+    type: String
+  },
 
-
-const mongoose=require('mongoose')
-const Schema=mongoose.Schema
-const {Mixed,ObjectId}=Schema.Types
-
-
-
-
-const movieSchema=new Schema({
-  doubanId:{
-    unique:true,
-    type:String
-  } ,
-
-  category:[{
-    type:ObjectId,
-    ref:'Category'
+  category: [{
+    type: ObjectId,
+    ref: 'Category'
   }],
 
-  rate:Number,
-  title:String,
-  summary:String,
-  video:String,
-  poster:String,
-  cover:String,
+  rate: Number,
+  title: String,
+  summary: String,
+  video: String,
+  poster: String,
+  cover: String,
 
-  videoKey:String,
-  posterKey:String,
-  coverKey:String,
+  videoKey: String,
+  posterKey: String,
+  coverKey: String,
 
-  rawTitle:String,
-  movieTypes:[String],
-  pubdate:Mixed,
-  year:Number,
+  rawTitle: String,
+  movieTypes: [String],
+  pubdate: Mixed,
+  year: Number,
 
-  tags:Array,
+  tags: [String],
 
-  meta:{
-    createdAt:{
-      type:Date,
-      default:Date.now()
+  meta: {
+    createdAt: {
+      type: Date,
+      default: Date.now()
     },
-    updatedAt:{
-      type:Date,
-      default:Date.now()
+    updatedAt: {
+      type: Date,
+      default: Date.now()
     }
   }
 })
 
-// movieSchema.pre('save',next=>{
-//   if(this.isNew){
-//     this.meta.createdAt=this.meta.updatedAt=Date.now()
-//   }else{
-//     this.meta.updatedAt=Date.now()
-//   }
-//   next()
-// })
-movieSchema.pre('save',function(next){
-  if(this.isNew){
-    this.meta.createdAt=this.meta.updatedAt=Date.now()
-  }else{
-    this.meta.updatedAt=Date.now()
+movieSchema.pre('save', function (next) {
+  if (this.isNew) {
+    this.meta.createdAt = this.meta.updatedAt = Date.now()
+  } else {
+    this.meta.updatedAt = Date.now()
   }
+
   next()
 })
 
-mongoose.model('Movie',movieSchema)
+
+mongoose.model('Movie', movieSchema)
