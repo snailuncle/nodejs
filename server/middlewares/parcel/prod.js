@@ -5,6 +5,7 @@ const{resolve}=require('path')
 
 const r=path=>resolve(__dirname,path)
 
+console.log("server/middlewares/prod.js")
 
 
 export const dev=async app=>{

@@ -5,6 +5,7 @@ const Mixed = Schema.Types.Mixed
 const SALT_WORK_FACTOR = 10
 const MAX_LOGIN_ATTEMPTS = 5
 const LOCK_TIME = 2 * 60 * 60 * 1000
+console.log("server/database/schema/user.js")
 
 const userSchema = new Schema({
   username: {

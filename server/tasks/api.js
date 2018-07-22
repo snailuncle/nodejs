@@ -2,24 +2,15 @@ const mongoose=require('mongoose')
 const Movie=mongoose.model('Movie')
 console.log("Movie=",Movie)
 const Category=mongoose.model('Category')
-console.log("Category=",Category)
 
-
-
-console.log("api运行了api运行了api运行了api运行了api运行了api运行了api运行了api运行了api运行了")
-
-// http://api.douban.com/v2/movie/subject/1764796
-// npm i request -S --registry=https://registry.npm.taobao.org
-
-
-
+console.log("server/tasks/api.js")
 
 const rp=require('request-promise-native')
 console.log('rp=',rp)
 async function fetchMovie(item){
-  console.log('调用了fetchMovie函数')
+
   const url=`http://api.douban.com/v2/movie/${item.doubanId}`
-  console.log('url=',url)
+
   const res=await rp(url)
   let body
   try{

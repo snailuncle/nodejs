@@ -1,6 +1,6 @@
 const fs = require('fs');
 const child_process = require('child_process');
-
+console.log("test/RESTful/master.js")
 for(var i=0; i<3; i++) {
    var workerProcess = child_process.spawn('node', ['support.js', i]);
 

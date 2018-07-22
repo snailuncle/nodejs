@@ -1,0 +1,31 @@
+[ 'enforce',
+  'shallow',
+  'job',
+  'damp',
+  'flight',
+  'appear',
+  'couple',
+  'panic',
+  'picture',
+  'jelly',
+  'earn',
+  'load' ]
+
+
+auto()
+助记词=[ 'enforce',
+'shallow',
+'job',
+'damp',
+'flight',
+'appear',
+'couple',
+'panic',
+'picture',
+'jelly',
+'earn',
+'load' ]
+
+for(let i=0;i<助记词.length;i++){
+
+}

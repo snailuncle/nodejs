@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const ObjectId = Schema.Types.ObjectId
-
+console.log("server/database/schema/category.js")
 const categorySchema = new Schema({
   name: {
     unique: true,

@@ -1,4 +1,7 @@
 
+
+console.log("server/tasks/qiniuExample.js")
+
 var mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
 var config = new qiniu.conf.Config();
 //config.useHttpsDomain = true;

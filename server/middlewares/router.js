@@ -1,6 +1,6 @@
 const { resolve } =require('path')
 const { Route }= require("../lib/decorator")
-
+console.log("server/middlewares/router.js")
 export const router=app=>{
   const apiPath=resolve(__dirname,'../routes')
   const router=new Route(app,apiPath)

@@ -1,6 +1,6 @@
 server/crawler/chrome.zip
 server/crawler/chromium/
-
+.cache/
 node_modules
 
 npm-debug.log

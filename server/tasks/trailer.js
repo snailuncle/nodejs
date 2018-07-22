@@ -1,5 +1,6 @@
 const cp=require('child_process')
 const {resolve}=require('path')
+console.log("server/tasks/trailer.js")
 
 ;(async()=>{
   const script=resolve(__dirname,'../crawler/video')

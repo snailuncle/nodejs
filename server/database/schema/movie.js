@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const { ObjectId, Mixed } = Schema.Types
+console.log("server/database/schema/movie.js")
 
 const movieSchema = new Schema({
   doubanId: {

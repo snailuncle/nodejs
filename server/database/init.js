@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const db = 'mongodb://localhost/douban-test'
 const glob = require('glob')
 const { resolve } = require('path')
-
+console.log("server/database/init.js")
 mongoose.Promise = global.Promise
 
 exports.initSchemas = () => {

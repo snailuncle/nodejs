@@ -70,6 +70,7 @@
 
 
 
+console.log("server/tasks/qiniu.js")
 
 
 let movies=[{

@@ -5,7 +5,8 @@ const glob = require('glob')
 
 const symbolPrefix = Symbol('prefix')
 const routerMap = new Map()
-
+console.log("server/lib/decorator.js")
+// server/lib/decorator.js routerMap= Map { _c: Map {} }
 const isArray = c => _.isArray(c) ? c : [c]
 
 export class Route {
@@ -18,7 +19,11 @@ export class Route {
   init () {
     glob.sync(resolve(this.apiPath, './**/*.js')).forEach(require)
 
+
+
+
     for (let [conf, controller] of routerMap) {
+
       const controllers = isArray(controller)
       const prefixPath = conf.target[symbolPrefix]
       if (prefixPath) prefixPath = normalizePath(prefixPath)
@@ -44,31 +49,6 @@ const router = conf => (target, key, descriptor) => {
 
 export const controller=path=>target=>(target.prototype[symbolPrefix]=path)
 
-export const controller = path => {
-  console.log("path=",path)
-  return function(target){
-    console.log("target=",target)
-    target.prototype[symbolPrefix] = path
-    console.log("target=",target)
-
-  }
-}
-
-
-path= /api/v0/movies
-target= function movieController() {
-    (0, _classCallCheck3.default)(this, movieController);
-  }
-target= function movieController() {
-    (0, _classCallCheck3.default)(this, movieController);
-  }
-path= /api/v0/user
-target= function userController() {
-    (0, _classCallCheck3.default)(this, userController);
-  }
-target= function userController() {
-    (0, _classCallCheck3.default)(this, userController);
-  }
 
 
 

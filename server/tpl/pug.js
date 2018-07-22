@@ -1,3 +1,6 @@
+console.log("server/tpl/pug.js")
+
+
 module.exports=`
 doctype html
 html

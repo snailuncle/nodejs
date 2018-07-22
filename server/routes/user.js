@@ -7,6 +7,7 @@ const {
 const {
   checkPassword
 } = require('../service/user')
+console.log("server/routes/user.js")
 
 @controller('/api/v0/user')
 export class userController {

@@ -6,6 +6,9 @@ const { connect, initSchemas, initAdmin } = require('./database/init')
 const R = require('ramda')
 const MIDDLEWARES = ['router', 'parcel']
 
+require("events")
+
+console.log("server/index.js")
 
 // const main = ctx => {
 //   if (ctx.request.path !== '/') {
@@ -49,7 +52,7 @@ const useMiddlewares = (app) => {
 
 
 
-
+console.log("server/index.js 网站的起点")
 
 connect()
 initSchemas()

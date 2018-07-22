@@ -1,0 +1,748 @@
+scrollLeft = function scrollLeft() {/*
+  boolean scrollLeft()
+  */}
+
+  source = undefined
+  setTraversalBefore = function setTraversalBefore() {/*
+  void setTraversalBefore(android.view.View)
+  void setTraversalBefore(android.view.View,int)
+  */}
+
+  isDismissable = function isDismissable() {/*
+  boolean isDismissable()
+  */}
+
+  isMultiLine = function isMultiLine() {/*
+  boolean isMultiLine()
+  */}
+
+  getClassName = function getClassName() {/*
+  java.lang.CharSequence getClassName()
+  */}
+
+  setContextClickable = function setContextClickable() {/*
+  void setContextClickable(boolean)
+  */}
+
+  setCheckable = function setCheckable() {/*
+  void setCheckable(boolean)
+  */}
+
+  getViewIdResourceName = function getViewIdResourceName() {/*
+  java.lang.String getViewIdResourceName()
+  */}
+
+  editable = false
+  checkable = function checkable() {/*
+  boolean checkable()
+  */}
+
+  dismiss = function dismiss() {/*
+  boolean dismiss()
+  */}
+
+  getLabelFor = function getLabelFor() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getLabelFor()
+  */}
+
+  scrollTo = function scrollTo() {/*
+  boolean scrollTo(int,int)
+  */}
+
+  getWindowId = function getWindowId() {/*
+  int getWindowId()
+  */}
+
+  setAccessibilityFocused = function setAccessibilityFocused() {/*
+  void setAccessibilityFocused(boolean)
+  */}
+
+  getText = function getText() {/*
+  java.lang.CharSequence getText()
+  */}
+
+  row = function row() {/*
+  int row()
+  */}
+
+  getActionList = function getActionList() {/*
+  java.util.List getActionList()
+  */}
+
+  mParentVirtualDescendantId = -1
+  enabled = function enabled() {/*
+  boolean enabled()
+  */}
+
+  getInputType = function getInputType() {/*
+  int getInputType()
+  */}
+
+  movementGranularities = 0
+  maxTextLength = -1
+  paste = function paste() {/*
+  boolean paste()
+  */}
+
+  setLongClickable = function setLongClickable() {/*
+  void setLongClickable(boolean)
+  */}
+
+  copy = function copy() {/*
+  boolean copy()
+  */}
+
+  findAccessibilityNodeInfosByViewId = function findAccessibilityNodeInfosByViewId() {/*
+  java.util.List findAccessibilityNodeInfosByViewId(java.lang.String)
+  */}
+
+  isFocusable = function isFocusable() {/*
+  boolean isFocusable()
+  */}
+
+  getWindow = function getWindow() {/*
+  android.support.v4.view.accessibility.AccessibilityWindowInfoCompat getWindow()
+  */}
+
+  traversalBefore = null
+  isEditable = function isEditable() {/*
+  boolean isEditable()
+  */}
+
+  selected = function selected() {/*
+  boolean selected()
+  */}
+
+  viewIdResourceName = null
+  removeChild = function removeChild() {/*
+  boolean removeChild(android.view.View)
+  boolean removeChild(android.view.View,int)
+  */}
+
+  extras = Bundle[{}]
+  getChildCount = function getChildCount() {/*
+  int getChildCount()
+  */}
+
+  addAction = function addAction() {/*
+  void addAction(int)
+  void addAction(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat)
+  */}
+
+  select = function select() {/*
+  boolean select()
+  */}
+
+  getTextSelectionStart = function getTextSelectionStart() {/*
+  int getTextSelectionStart()
+  */}
+
+  getParent = function getParent() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getParent()
+  */}
+
+  getBoundsInScreen = function getBoundsInScreen() {/*
+  void getBoundsInScreen(android.graphics.Rect)
+  */}
+
+  getRoleDescription = function getRoleDescription() {/*
+  java.lang.CharSequence getRoleDescription()
+  */}
+
+  rowCount = function rowCount() {/*
+  int rowCount()
+  */}
+
+  canOpenPopup = function canOpenPopup() {/*
+  boolean canOpenPopup()
+  */}
+
+  isFocused = function isFocused() {/*
+  boolean isFocused()
+  */}
+
+  text = function text() {/*
+  java.lang.String text()
+  */}
+
+  isLongClickable = function isLongClickable() {/*
+  boolean isLongClickable()
+  */}
+
+  isClickable = function isClickable() {/*
+  boolean isClickable()
+  */}
+
+  findByViewId = function findByViewId() {/*
+  java.util.List findByViewId(java.lang.String)
+  */}
+
+  focusable = function focusable() {/*
+  boolean focusable()
+  */}
+
+  isContextClickable = function isContextClickable() {/*
+  boolean isContextClickable()
+  */}
+
+  removeAction = function removeAction() {/*
+  boolean removeAction(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat)
+  */}
+
+  setFocused = function setFocused() {/*
+  void setFocused(boolean)
+  */}
+
+  column = function column() {/*
+  int column()
+  */}
+
+  liveRegion = 0
+  focused = function focused() {/*
+  boolean focused()
+  */}
+
+  childCount = function childCount() {/*
+  int childCount()
+  */}
+
+  contextClickable = false
+  find = function find() {/*
+  com.stardust.automator.UiObjectCollection find(com.stardust.automator.UiGlobalSelector)
+  */}
+
+  getActions = function getActions() {/*
+  int getActions()
+  */}
+
+  bounds = function bounds() {/*
+  android.graphics.Rect bounds()
+  */}
+
+  toString = function toString() {/*
+  java.lang.String toString()
+  */}
+
+  expand = function expand() {/*
+  boolean expand()
+  */}
+
+  isSelected = function isSelected() {/*
+  boolean isSelected()
+  */}
+
+  boundsInScreen = undefined
+  setMultiLine = function setMultiLine() {/*
+  void setMultiLine(boolean)
+  */}
+
+  collectionInfo = null
+  desc = function desc() {/*
+  java.lang.String desc()
+  */}
+
+  setCollectionItemInfo = function setCollectionItemInfo() {/*
+  void setCollectionItemInfo(java.lang.Object)
+  */}
+
+  scrollUp = function scrollUp() {/*
+  boolean scrollUp()
+  */}
+
+  contentDescription = null
+  accessibilityFocus = function accessibilityFocus() {/*
+  boolean accessibilityFocus()
+  */}
+
+  findAccessibilityNodeInfosByText = function findAccessibilityNodeInfosByText() {/*
+  java.util.List findAccessibilityNodeInfosByText(java.lang.String)
+  */}
+
+  scrollDown = function scrollDown() {/*
+  boolean scrollDown()
+  */}
+
+  getLiveRegion = function getLiveRegion() {/*
+  int getLiveRegion()
+  */}
+
+  labeledBy = null
+  recycle = function recycle() {/*
+  void recycle()
+  */}
+
+  notify = function notify() {/*
+  void notify()
+  */}
+
+  setMaxTextLength = function setMaxTextLength() {/*
+  void setMaxTextLength(int)
+  */}
+
+  isVisibleToUser = function isVisibleToUser() {/*
+  boolean isVisibleToUser()
+  */}
+
+  getTextSelectionEnd = function getTextSelectionEnd() {/*
+  int getTextSelectionEnd()
+  */}
+
+  packageName = function packageName() {/*
+  java.lang.String packageName()
+  */}
+
+  clearAccessibilityFocus = function clearAccessibilityFocus() {/*
+  boolean clearAccessibilityFocus()
+  */}
+
+  setLiveRegion = function setLiveRegion() {/*
+  void setLiveRegion(int)
+  */}
+
+  setInputType = function setInputType() {/*
+  void setInputType(int)
+  */}
+
+  setSelected = function setSelected() {/*
+  void setSelected(boolean)
+  */}
+
+  setText = function setText() {/*
+  void setText(java.lang.CharSequence)
+  boolean setText(java.lang.String)
+  */}
+
+  setError = function setError() {/*
+  void setError(java.lang.CharSequence)
+  */}
+
+  setBoundsInParent = function setBoundsInParent() {/*
+  void setBoundsInParent(android.graphics.Rect)
+  */}
+
+  isContentInvalid = function isContentInvalid() {/*
+  boolean isContentInvalid()
+  */}
+
+  setDismissable = function setDismissable() {/*
+  void setDismissable(boolean)
+  */}
+
+  longClick = function longClick() {/*
+  boolean longClick()
+  */}
+
+  isScrollable = function isScrollable() {/*
+  boolean isScrollable()
+  */}
+
+  getExtras = function getExtras() {/*
+  android.os.Bundle getExtras()
+  */}
+
+  setLabeledBy = function setLabeledBy() {/*
+  void setLabeledBy(android.view.View,int)
+  void setLabeledBy(android.view.View)
+  */}
+
+  setViewIdResourceName = function setViewIdResourceName() {/*
+  void setViewIdResourceName(java.lang.String)
+  */}
+
+  boundsInParent = function boundsInParent() {/*
+  android.graphics.Rect boundsInParent()
+  */}
+
+  setPackageName = function setPackageName() {/*
+  void setPackageName(java.lang.CharSequence)
+  */}
+
+  checked = function checked() {/*
+  boolean checked()
+  */}
+
+  parent = function parent() {/*
+  com.stardust.automator.UiObject parent()
+  */}
+
+  getAllocator = function getAllocator() {/*
+  com.stardust.view.accessibility.AccessibilityNodeInfoAllocator getAllocator()
+  */}
+
+  hierarchically = false
+  findFocus = function findFocus() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat findFocus(int)
+  */}
+
+  setFocusable = function setFocusable() {/*
+  void setFocusable(boolean)
+  */}
+
+  setCanOpenPopup = function setCanOpenPopup() {/*
+  void setCanOpenPopup(boolean)
+  */}
+
+  getContentDescription = function getContentDescription() {/*
+  java.lang.CharSequence getContentDescription()
+  */}
+
+  dismissable = false
+  longClickable = function longClickable() {/*
+  boolean longClickable()
+  */}
+
+  getTraversalAfter = function getTraversalAfter() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getTraversalAfter()
+  */}
+
+  columnSpan = function columnSpan() {/*
+  int columnSpan()
+  */}
+
+  setEnabled = function setEnabled() {/*
+  void setEnabled(boolean)
+  */}
+
+  setScrollable = function setScrollable() {/*
+  void setScrollable(boolean)
+  */}
+
+  scrollRight = function scrollRight() {/*
+  boolean scrollRight()
+  */}
+
+  error = null
+  getBoundsInParent = function getBoundsInParent() {/*
+  void getBoundsInParent(android.graphics.Rect)
+  */}
+
+  drawingOrder = function drawingOrder() {/*
+  int drawingOrder()
+  */}
+
+  windowId = 677
+  getPackageName = function getPackageName() {/*
+  java.lang.CharSequence getPackageName()
+  */}
+
+  selection = undefined
+  clearFocus = function clearFocus() {/*
+  boolean clearFocus()
+  */}
+
+  depth = function depth() {/*
+  int depth()
+  */}
+
+  visibleToUser = function visibleToUser() {/*
+  boolean visibleToUser()
+  */}
+
+  setClickable = function setClickable() {/*
+  void setClickable(boolean)
+  */}
+
+  focusSearch = function focusSearch() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat focusSearch(int)
+  */}
+
+  getRangeInfo = function getRangeInfo() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat getRangeInfo()
+  */}
+
+  getMovementGranularities = function getMovementGranularities() {/*
+  int getMovementGranularities()
+  */}
+
+  columnCount = function columnCount() {/*
+  int columnCount()
+  */}
+
+  isCheckable = function isCheckable() {/*
+  boolean isCheckable()
+  */}
+
+  isAccessibilityFocused = function isAccessibilityFocused() {/*
+  boolean isAccessibilityFocused()
+  */}
+
+  getError = function getError() {/*
+  java.lang.CharSequence getError()
+  */}
+
+  rowSpan = function rowSpan() {/*
+  int rowSpan()
+  */}
+
+  child = function child() {/*
+  com.stardust.automator.UiObject child(int)
+  */}
+
+  setVisibleToUser = function setVisibleToUser() {/*
+  void setVisibleToUser(boolean)
+  */}
+
+  setRangeInfo = function setRangeInfo() {/*
+  void setRangeInfo(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat)
+  */}
+
+  setProgress = function setProgress() {/*
+  boolean setProgress(float)
+  */}
+
+  setChecked = function setChecked() {/*
+  void setChecked(boolean)
+  */}
+
+  isEnabled = function isEnabled() {/*
+  boolean isEnabled()
+  */}
+
+  scrollable = function scrollable() {/*
+  boolean scrollable()
+  */}
+
+  progress = undefined
+  setClassName = function setClassName() {/*
+  void setClassName(java.lang.CharSequence)
+  */}
+
+  focus = function focus() {/*
+  boolean focus()
+  */}
+
+  scrollForward = function scrollForward() {/*
+  boolean scrollForward()
+  */}
+
+  setPassword = function setPassword() {/*
+  void setPassword(boolean)
+  */}
+
+  getClass = function getClass() {/*
+  java.lang.Class getClass()
+  */}
+
+  equals = function equals() {/*
+  boolean equals(java.lang.Object)
+  */}
+
+  scrollBackward = function scrollBackward() {/*
+  boolean scrollBackward()
+  */}
+
+  className = function className() {/*
+  java.lang.String className()
+  */}
+
+  contentInvalid = false
+  findOne = function findOne() {/*
+  com.stardust.automator.UiObject findOne(com.stardust.automator.UiGlobalSelector)
+  */}
+
+  getCollectionInfo = function getCollectionInfo() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat getCollectionInfo()
+  */}
+
+  setTraversalAfter = function setTraversalAfter() {/*
+  void setTraversalAfter(android.view.View,int)
+  void setTraversalAfter(android.view.View)
+  */}
+
+  getDrawingOrder = function getDrawingOrder() {/*
+  int getDrawingOrder()
+  */}
+
+  setDrawingOrder = function setDrawingOrder() {/*
+  void setDrawingOrder(int)
+  */}
+
+  addChild = function addChild() {/*
+  void addChild(android.view.View,int)
+  void addChild(android.view.View)
+  */}
+
+  findByText = function findByText() {/*
+  java.util.List findByText(java.lang.String)
+  */}
+
+  allocator = null
+  click = function click() {/*
+  boolean click()
+  */}
+
+  setImportantForAccessibility = function setImportantForAccessibility() {/*
+  void setImportantForAccessibility(boolean)
+  */}
+
+  children = function children() {/*
+  com.stardust.automator.UiObjectCollection children()
+  */}
+
+  setBoundsInScreen = function setBoundsInScreen() {/*
+  void setBoundsInScreen(android.graphics.Rect)
+  */}
+
+  setSelection = function setSelection() {/*
+  boolean setSelection(int,int)
+  */}
+
+  accessibilityFocused = function accessibilityFocused() {/*
+  boolean accessibilityFocused()
+  */}
+
+  setContentInvalid = function setContentInvalid() {/*
+  void setContentInvalid(boolean)
+  */}
+
+  clickable = function clickable() {/*
+  boolean clickable()
+  */}
+
+  setEditable = function setEditable() {/*
+  void setEditable(boolean)
+  */}
+
+  textSelectionEnd = -1
+  class = class com.stardust.automator.UiObject
+  textSelectionStart = -1
+  id = function id() {/*
+  java.lang.String id()
+  */}
+
+  isImportantForAccessibility = function isImportantForAccessibility() {/*
+  boolean isImportantForAccessibility()
+  */}
+
+  traversalAfter = null
+  setTextSelection = function setTextSelection() {/*
+  void setTextSelection(int,int)
+  */}
+
+  getTraversalBefore = function getTraversalBefore() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getTraversalBefore()
+  */}
+
+  getCollectionItemInfo = function getCollectionItemInfo() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat getCollectionItemInfo()
+  */}
+
+  inputType = 0
+  refresh = function refresh() {/*
+  boolean refresh()
+  */}
+
+  rangeInfo = null
+  roleDescription = null
+  indexInParent = function indexInParent() {/*
+  int indexInParent()
+  */}
+
+  cut = function cut() {/*
+  boolean cut()
+  */}
+
+  getInfo = function getInfo() {/*
+  java.lang.Object getInfo()
+  */}
+
+  notifyAll = function notifyAll() {/*
+  void notifyAll()
+  */}
+
+  setRoleDescription = function setRoleDescription() {/*
+  void setRoleDescription(java.lang.CharSequence)
+  */}
+
+  window = AccessibilityWindowInfo[id=677, type=TYPE_APPLICATION, layer=21115, bounds=Rect(0, 0 - 1080, 1920), focused=true, active=true, hasParent=false, hasChildren=false]
+  setCollectionInfo = function setCollectionInfo() {/*
+  void setCollectionInfo(java.lang.Object)
+  */}
+
+  performAction = function performAction() {/*
+  boolean performAction(int)
+  boolean performAction(int,com.stardust.automator.ActionArgument[])
+  boolean performAction(int,android.os.Bundle)
+  */}
+
+  getMaxTextLength = function getMaxTextLength() {/*
+  int getMaxTextLength()
+  */}
+
+  textSelection = undefined
+  show = function show() {/*
+  boolean show()
+  */}
+
+  setContentDescription = function setContentDescription() {/*
+  void setContentDescription(java.lang.CharSequence)
+  */}
+
+  collapse = function collapse() {/*
+  boolean collapse()
+  */}
+
+  info = android.view.accessibility.AccessibilityNodeInfo@800085e9; boundsInParent: Rect(0, 0 - 1072, 1907); boundsInScreen: Rect(4, 7 - 1076, 1914); packageName: com.kwai.sogame; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+  setMovementGranularities = function setMovementGranularities() {/*
+  void setMovementGranularities(int)
+  */}
+
+  setParent = function setParent() {/*
+  void setParent(android.view.View,int)
+  void setParent(android.view.View)
+  */}
+
+  actionList = [android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat@730e13f, android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat@a2b4a0c, android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat@6465f55, android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat@dc0ad6a]
+  setSource = function setSource() {/*
+  void setSource(android.view.View)
+  void setSource(android.view.View,int)
+  */}
+
+  password = function password() {/*
+  boolean password()
+  */}
+
+  isChecked = function isChecked() {/*
+  boolean isChecked()
+  */}
+
+  hashCode = function hashCode() {/*
+  int hashCode()
+  */}
+
+  contextClick = function contextClick() {/*
+  boolean contextClick()
+  */}
+
+  wait = function wait() {/*
+  void wait(long,int)
+  void wait(long)
+  void wait()
+  */}
+
+  actions = 76
+  multiLine = false
+  getChild = function getChild() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getChild(int)
+  */}
+
+  isPassword = function isPassword() {/*
+  boolean isPassword()
+  */}
+
+  isHierarchically = function isHierarchically() {/*
+  boolean isHierarchically()
+  */}
+
+  importantForAccessibility = false
+  setLabelFor = function setLabelFor() {/*
+  void setLabelFor(android.view.View,int)
+  void setLabelFor(android.view.View)
+  */}
+
+  getLabeledBy = function getLabeledBy() {/*
+  android.support.v4.view.accessibility.AccessibilityNodeInfoCompat getLabeledBy()
+  */}
+
+  collectionItemInfo = null
+  labelFor = null

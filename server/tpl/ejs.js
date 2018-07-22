@@ -1,4 +1,6 @@
 
+console.log("server/tpl/ejs.js")
+
 module.exports=`
 <!DOCTYPE html>
 <html lang="en">

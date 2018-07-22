@@ -4,6 +4,7 @@ const {resolve}=require('path')
 const Movie=mongoose.model('Movie')
 
 
+console.log("server/tasks/movie.js")
 
 // var ps = require('child_process').spawn(process.platform === "win32" ? "npm.cmd" : "npm", ['install'], {
 //   stdio: 'inherit',
@@ -12,7 +13,6 @@ const Movie=mongoose.model('Movie')
 
 
 ;(async()=>{
-  console.log("server\tasks\movie.js被调用了------------------------------------------------------------------------------------------------------------------------------------------")
   const script=resolve(__dirname,'../crawler/trailer-list')
   // console.log(process.env.PATH)
   const child=cp.fork(script,[])

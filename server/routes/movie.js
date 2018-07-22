@@ -9,7 +9,7 @@ const {
   getMovieDetail,
   getRelativeMovies
 } = require('../service/movie')
-
+console.log("server/routes/movie.js")
 @controller('/api/v0/movies')
 export class movieController {
   @get('/')

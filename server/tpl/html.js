@@ -1,3 +1,5 @@
+console.log("server/tpl/html.js")
+
 module.exports=`
   <!DOCTYPE html>
   <html lang="en">

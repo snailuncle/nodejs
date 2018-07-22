@@ -7,4 +7,7 @@ npm i babel-core babel-polyfill -D
 
 npm i lodash ramda -S --registry=https://registry.npm.taobao.org
 
-node start 
+node start
+
+
+npm i htmlparser2 -S --registry=https://registry.npm.taobao.org
