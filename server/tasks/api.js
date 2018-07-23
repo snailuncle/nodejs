@@ -1,3 +1,4 @@
+console.log(module.filename)
 const mongoose=require('mongoose')
 const Movie=mongoose.model('Movie')
 console.log("Movie=",Movie)

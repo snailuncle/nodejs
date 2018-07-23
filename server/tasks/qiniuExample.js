@@ -1,3 +1,4 @@
+console.log(module.filename)
 
 
 console.log("server/tasks/qiniuExample.js")

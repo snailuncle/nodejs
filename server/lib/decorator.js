@@ -1,3 +1,4 @@
+console.log(module.filename)
 const Router = require('koa-router')
 const { resolve } = require('path')
 const _ = require('lodash')

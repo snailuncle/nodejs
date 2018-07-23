@@ -1,3 +1,4 @@
+console.log(module.filename)
 const Koa = require('koa')
 const mongoose = require('mongoose')
 const views = require('koa-views')

@@ -1,3 +1,4 @@
+console.log(module.filename)
 const cp=require('child_process')
 const mongoose=require('mongoose')
 const {resolve}=require('path')

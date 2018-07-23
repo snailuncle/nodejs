@@ -1,3 +1,4 @@
+console.log(module.filename)
 module.exports={
   "qiniu":{
     "bucket":"koa2",

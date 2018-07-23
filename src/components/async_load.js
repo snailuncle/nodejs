@@ -1,3 +1,4 @@
+console.log(module.filename)
 import React,{Component} from 'react'
 console.log("src/components/async_load.js")
 export default (loadComponent,placeholder='正在加载中')=>{

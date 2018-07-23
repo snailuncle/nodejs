@@ -40,7 +40,8 @@ def addFirstLine(file):
       # sys.exit(0)
 
 #递归遍历/root目录下所有文件
-path222="D:dejsDoubandejsdejsHelloWorld/douban"
+path222="D:/nodejsDouban/nodejs/nodejsHelloWorld/douban"
+
 
 gci(path222)
 

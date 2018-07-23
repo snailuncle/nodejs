@@ -1,3 +1,4 @@
+console.log(module.filename)
 
 import React,{Component} from 'react'
 console.log("src/views/movie/detail.js")

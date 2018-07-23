@@ -1,3 +1,4 @@
+console.log(module.filename)
 const mongoose=require('mongoose')
 const User=mongoose.model('User')
 console.log("server/service/user.js")

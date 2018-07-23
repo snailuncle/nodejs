@@ -1,3 +1,4 @@
+console.log(module.filename)
 console.log('这里是hello模块的第一行')
 exports.world = function() {
   console.log('Hello World');

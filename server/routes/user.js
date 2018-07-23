@@ -1,3 +1,4 @@
+console.log(module.filename)
 const {
   controller,
   get,

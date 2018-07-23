@@ -1,3 +1,4 @@
+console.log(module.filename)
 const cp=require('child_process')
 const {resolve}=require('path')
 console.log("server/tasks/trailer.js")

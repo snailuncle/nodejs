@@ -1,3 +1,4 @@
+console.log(module.filename)
 const puppeteer=require('puppeteer')
 const {resolve}=require('path')
 const url='https://movie.douban.com/tag/#/?sort=T&range=6,10&tags='

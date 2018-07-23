@@ -1,3 +1,4 @@
+console.log(module.filename)
 const Koa = require('koa')
 const { resolve } = require('path')
 const serve = require('koa-static')

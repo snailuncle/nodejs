@@ -1,3 +1,4 @@
+console.log(module.filename)
 import React from 'react'
 import {
   Route,

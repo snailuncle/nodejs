@@ -1,3 +1,4 @@
+console.log(module.filename)
 
 var crypto = require('crypto');
 var seed = '86728f5fc3bd99db94d3cdaf105d67788194e9701bf95d049ad0e1ee3d004277'

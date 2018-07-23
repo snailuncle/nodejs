@@ -1,3 +1,4 @@
+console.log(module.filename)
 import AC from './components/async_load'
 console.log("src/routes.js")
 export default [

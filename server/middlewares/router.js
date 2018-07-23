@@ -1,3 +1,4 @@
+console.log(module.filename)
 const { resolve } =require('path')
 const { Route }= require("../lib/decorator")
 console.log("server/middlewares/router.js")

@@ -1,3 +1,4 @@
+console.log(module.filename)
 const mongoose = require('mongoose')
 const db = 'mongodb://localhost/douban-test'
 const glob = require('glob')

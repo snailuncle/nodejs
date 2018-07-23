@@ -1,3 +1,4 @@
+console.log(module.filename)
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const { ObjectId, Mixed } = Schema.Types

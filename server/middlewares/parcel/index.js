@@ -1,3 +1,4 @@
+console.log(module.filename)
 const env=process.env.NODE_ENV==='production' ? 'prod' : 'dev'
 console.log("server/middlewares/index.js")
 

@@ -1,3 +1,4 @@
+console.log(module.filename)
 
 // 华北 1 可用区 C
 // 47.104.211.172(公)

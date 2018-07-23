@@ -1,5 +1,8 @@
 D:\nodejsDouban\nodejs\imgabc.jpg
 
+放弃修改
+git checkout .
+
 查看状态
 git status -s
 

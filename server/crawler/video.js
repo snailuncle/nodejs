@@ -1,3 +1,4 @@
+console.log(module.filename)
 const {resolve}=require('path')
 const puppeteer=require('puppeteer')
 const base='https://movie.douban.com/subject/'
