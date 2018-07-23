@@ -1,39 +1,5 @@
 console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
-
-// for(let i=0;i<module.children.length;i++){
-//   console.log("本次出席的模块有: ",module.children[i])
-// }
-// outputObj(module.parent)
-
-// function outputObj(obj) {
-// 	var description = "";
-// 	for (var i in obj) {
-// 		description += i + " = " + obj[i] + "\n";
-// 	}
-// 	console.log(description);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Koa = require('koa')
 const mongoose = require('mongoose')
 const views = require('koa-views')
@@ -41,19 +7,30 @@ const { resolve } = require('path')
 const { connect, initSchemas, initAdmin } = require('./database/init')
 const R = require('ramda')
 const MIDDLEWARES = ['router', 'parcel']
-
 require("events")
 
 
+// console.log("===========================================")
+// // var printKeyConcatValue = (value, key) => console.log(key + ':' + value);
+// var printKeyConcatValue = (key, value) => console.log(key + ':' + value);
+// R.forEachObjIndexed(printKeyConcatValue, {x: 1, y: 2}); //=> {x: 1, y: 2}
+// // logs x:1
+// // logs y:2
 
-// const main = ctx => {
-//   if (ctx.request.path !== '/') {
-//     ctx.response.type = 'html';
-//     ctx.response.body = '<a href="/">Index Page</a>';
-//   } else {
-//     ctx.response.body = 'Hello World';
-//   }
-// };
+
+
+// process.exit(0)
+
+
+// console.log("===========================================")
+
+
+
+
+
+
+
+
 
 
 
@@ -62,29 +39,29 @@ const useMiddlewares = (app) => {
   R.map(
     R.compose(
       R.forEachObjIndexed(
-        initWith => initWith(app)
+        initWith => {console.log("initWith=",initWith);return initWith(app)}
       ),
       require,
-      name => resolve(__dirname, `./middlewares/${name}`)
+      name => {console.log("name=",name);return resolve(__dirname, `./middlewares/${name}`)},
+
     )
   )(MIDDLEWARES)
 }
 
-// ;(async () => {
-//   await connect()
-//   initSchemas()
-//   await initAdmin()
-//   const app = new Koa()
-//   await useMiddlewares(app)
 
-//   // console.log("ctx.request.path=",ctx.request.path)
 
-//   // console.log(`${ctx.request.method} ${ctx.request.url}`); // 打印URL
 
-//   app.listen(4455)
 
-//   await next();
-// })()
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,5 +75,3 @@ app.use(async (ctx, next) => {
   await next(); // 调用下一个middleware
 });
 app.listen(4455)
-
-
