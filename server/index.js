@@ -1,4 +1,39 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
+
+// for(let i=0;i<module.children.length;i++){
+//   console.log("本次出席的模块有: ",module.children[i])
+// }
+// outputObj(module.parent)
+
+// function outputObj(obj) {
+// 	var description = "";
+// 	for (var i in obj) {
+// 		description += i + " = " + obj[i] + "\n";
+// 	}
+// 	console.log(description);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Koa = require('koa')
 const mongoose = require('mongoose')
 const views = require('koa-views')
@@ -9,7 +44,7 @@ const MIDDLEWARES = ['router', 'parcel']
 
 require("events")
 
-console.log("server/index.js")
+
 
 // const main = ctx => {
 //   if (ctx.request.path !== '/') {
@@ -52,8 +87,6 @@ const useMiddlewares = (app) => {
 // })()
 
 
-
-console.log("server/index.js 网站的起点")
 
 connect()
 initSchemas()

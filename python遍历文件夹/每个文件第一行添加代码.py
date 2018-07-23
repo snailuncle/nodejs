@@ -30,9 +30,10 @@ def getExtensionName(path):
 def addFirstLine(file):
   with open(file, 'r+',encoding="utf-8") as f:
     content = f.read()
+    # f.seek(0, 0)
+    # f.write('console.log(module.filename)\n'+content)
     f.seek(0, 0)
-    f.write('console.log(module.filename)\n'+content)
-
+    f.write('console.log(module.parent.filename+ "  调用了模块  ======")\n'+content)
 
 
 

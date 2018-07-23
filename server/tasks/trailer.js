@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const cp=require('child_process')
 const {resolve}=require('path')

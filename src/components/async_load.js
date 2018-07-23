@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 import React,{Component} from 'react'
 console.log("src/components/async_load.js")

@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const Router = require('koa-router')
 const { resolve } = require('path')
@@ -6,7 +7,6 @@ const glob = require('glob')
 
 const symbolPrefix = Symbol('prefix')
 const routerMap = new Map()
-console.log("server/lib/decorator.js")
 // server/lib/decorator.js routerMap= Map { _c: Map {} }
 const isArray = c => _.isArray(c) ? c : [c]
 

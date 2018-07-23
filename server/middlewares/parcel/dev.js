@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const Bundler=require('parcel-bundler')
 const views=require('koa-views')

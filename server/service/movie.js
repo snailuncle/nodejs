@@ -1,7 +1,7 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const mongoose=require('mongoose')
 const Movie=mongoose.model('Movie')
-console.log("server/service/movie.js")
 export const getAllMovies=async(type,year)=>{
   let query={}
   if(type){

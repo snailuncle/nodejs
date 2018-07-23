@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const {
   controller,
@@ -10,7 +11,6 @@ const {
   getMovieDetail,
   getRelativeMovies
 } = require('../service/movie')
-console.log("server/routes/movie.js")
 @controller('/api/v0/movies')
 export class movieController {
   @get('/')

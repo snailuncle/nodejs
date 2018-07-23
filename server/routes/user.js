@@ -1,3 +1,4 @@
+console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const {
   controller,
@@ -8,7 +9,6 @@ const {
 const {
   checkPassword
 } = require('../service/user')
-console.log("server/routes/user.js")
 
 @controller('/api/v0/user')
 export class userController {
