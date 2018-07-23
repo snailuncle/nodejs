@@ -7,26 +7,26 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-18-百度AI人脸检测
+git checkout master -b daily-7-23-快手小游戏
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m 'daily-7-18-百度AI人脸检测'
+git commit -m 'daily-7-23-快手小游戏'
 
 推送到分支
-git push origin daily-7-18-百度AI人脸检测
+git push origin daily-7-23-快手小游戏
 
 
 切换主干||分支
 git checkout master     ||    git checkout  daily-10-1
 
 本地合并分支到主干
-git merge daily-7-18-百度AI人脸检测
+git merge daily-7-23-快手小游戏
 
 远端合并分支到主干
-git merge origin/daily-7-18-百度AI人脸检测
+git merge origin/daily-7-23-快手小游戏
 
 推送主干
 git push origin master
