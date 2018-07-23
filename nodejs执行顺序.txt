@@ -1,4 +1,6 @@
-D:\nodejsDouban\nodejs\nodejsHelloWorld\douban (master -> origin) (douban@1.0.0)
+
+D:\nodejsDouban\nodejs\nodejsHelloWorld\douban (master -> origin) (douban@1
+.0.0)
 $ npm start
 
 > douban@1.0.0 start D:\nodejsDouban\nodejs\nodejsHelloWorld\douban
@@ -7,29 +9,25 @@ $ npm start
 [nodemon] 1.18.2
 [nodemon] reading config .\nodemon.json
 [nodemon] to restart at any time, enter `rs`
-[nodemon] or send SIGHUP to 6896 to restart
+[nodemon] or send SIGHUP to 8504 to restart
 [nodemon] ignoring: .\.git/**/* node_modules/**/node_modules
 [nodemon] watching: D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server/**/* D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\src\views/**/* views
 [nodemon] watching extensions: js,json
 [nodemon] starting `node --harmony ./start.js`
 [nodemon] spawning
-[nodemon] child pid: 7980
+[nodemon] child pid: 5524
 [nodemon] watching 114 files
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\start.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\start.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\index.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\index.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\init.js
-server/database/init.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\init.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\schema\category.js
-server/database/schema/category.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\init.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\schema\movie.js
-server/database/schema/movie.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\init.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\database\schema\user.js
-server/database/schema/user.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\index.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\middlewares\router.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\middlewares\router.js  调用了模块  ======
@@ -42,37 +40,28 @@ D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\lib\decorator.js  调用�
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\routes\user.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\routes\user.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\service\user.js
-server/service/user.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\index.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\middlewares\parcel\index.js
-server/middlewares/index.js
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\middlewares\parcel\index.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\server\middlewares\parcel\dev.js
-server/middlewares/router.js
-- Building...(node:3356) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
-/ Building index.html...MongoDB Connected successfully!
+- Building...(node:5096) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+\ Building index.js...MongoDB Connected successfully!
 Mongoose: categories.ensureIndex({ name: 1 }, { unique: true, background: true })
 Mongoose: movies.ensureIndex({ doubanId: 1 }, { unique: true, background: true })
 Mongoose: users.ensureIndex({ username: 1 }, { unique: true, background: true })
 Mongoose: users.findOne({ username: 'Scott' }, { fields: {} })
-- Building Route.js...Mongoose: users.ensureIndex({ email: 1 }, { unique: true, background: true })
-D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\node_modules\parcel-bundler\src\utils\config.js  调用了模块  ======
+- Building Route.js...D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\node_modules\parcel-bundler\src\utils\config.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\postcss.config.js
-\ Building Route.js...Mongoose: users.ensureIndex({ password: 1 }, { unique: true, background: true })
-D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\node_modules\parcel-bundler\src\utils\config.js  调用了模块  ======
+\ Building Route.js...Mongoose: users.ensureIndex({ email: 1 }, { unique: true, background: true })
+\ Building bundle-loader.js...Mongoose: users.ensureIndex({ password: 1 }, { unique: true, background: true })
+/ Building index.js...D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\node_modules\parcel-bundler\src\utils\config.js  调用了模块  ======
 D:\nodejsDouban\nodejs\nodejsHelloWorld\douban\postcss.config.js
-√  Built in 20.34s.
-GET /
-GET /src.261a91d8.css
-GET /src.261a91d8.js
-GET /
-GET /src.261a91d8.css
-GET /src.261a91d8.js
+√  Built in 19.82s.
 GET /
 GET /src.261a91d8.css
 GET /src.261a91d8.js
 GET /favicon.ico
-终止批处理操作吗(Y/N)? y
-
-D:\nodejsDouban\nodejs\nodejsHelloWorld\douban (master -> origin) (douban@1.0.0)
-$
+GET /
+GET /src.261a91d8.css
+GET /src.261a91d8.js
+GET /favicon.ico

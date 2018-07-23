@@ -2,7 +2,6 @@ console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const mongoose=require('mongoose')
 const User=mongoose.model('User')
-console.log("server/service/user.js")
 
 export const checkPassword=async(email,pasword)=>{
   let match=false

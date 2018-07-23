@@ -6,7 +6,6 @@ const serve=require('koa-static')
 const{resolve}=require('path')
 
 const r=path=>resolve(__dirname,path)
-console.log("server/middlewares/router.js")
 const bundler=new Bundler(r('../../../src/index.html'),{
   publicUrl:'/',
   watch:true
