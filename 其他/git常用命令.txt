@@ -10,26 +10,26 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-24-不显示首页两个字
+git checkout master -b daily-7-24-正常显示首页=>后面有可能是括号
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m 'daily-7-24-不显示首页两个字'
+git commit -m 'daily-7-24-正常显示首页=>后面有可能是括号'
 
 推送到分支
-git push origin daily-7-24-不显示首页两个字
+git push origin daily-7-24-正常显示首页=>后面有可能是括号
 
 
 切换主干||分支
 git checkout master     ||    git checkout  daily-10-1
 
 本地合并分支到主干
-git merge daily-7-24-不显示首页两个字
+git merge daily-7-24-正常显示首页=>后面有可能是括号
 
 远端合并分支到主干
-git merge origin/daily-7-24-不显示首页两个字
+git merge origin/daily-7-24-正常显示首页=>后面有可能是括号
 
 推送主干
 git push origin master
@@ -54,6 +54,8 @@ git clone  // 项目地址
 git checkout 分支名字
 git pull origin 分支名字
 
+//删除分支
+git branch -d <branch_name>
 
 
 //打开当前命令行所在文件夹
