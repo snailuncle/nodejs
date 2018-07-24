@@ -10,26 +10,26 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-24-正常显示首页-箭头后面有可能是括号
+git checkout master -b daily-7-24-增加首页布局
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m 'daily-7-24-正常显示首页-箭头后面有可能是括号'
+git commit -m 'daily-7-24-增加首页布局'
 
 推送到分支
-git push origin daily-7-24-正常显示首页-箭头后面有可能是括号
+git push origin daily-7-24-增加首页布局
 
 
 切换主干||分支
 git checkout master     ||    git checkout  daily-10-1
 
 本地合并分支到主干
-git merge daily-7-24-正常显示首页-箭头后面有可能是括号
+git merge daily-7-24-增加首页布局
 
 远端合并分支到主干
-git merge origin/daily-7-24-正常显示首页-箭头后面有可能是括号
+git merge origin/daily-7-24-增加首页布局
 
 推送主干
 git push origin master
