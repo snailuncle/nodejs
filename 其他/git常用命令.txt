@@ -10,26 +10,26 @@ git status -s
 git branch
 
 创建分支
-git checkout master -b daily-7-24-显示打包包主页是nodejsHelloWorld/douban/src/index.html
+git checkout master -b daily-7-24-不显示首页两个字
 
 提交到暂存区
 git add .
 
 提交评论
-git commit -m 'daily-7-24-显示打包包主页是nodejsHelloWorld/douban/src/index.html'
+git commit -m 'daily-7-24-不显示首页两个字'
 
 推送到分支
-git push origin daily-7-24-显示打包包主页是nodejsHelloWorld/douban/src/index.html
+git push origin daily-7-24-不显示首页两个字
 
 
 切换主干||分支
 git checkout master     ||    git checkout  daily-10-1
 
 本地合并分支到主干
-git merge daily-7-24-显示打包包主页是nodejsHelloWorld/douban/src/index.html
+git merge daily-7-24-不显示首页两个字
 
 远端合并分支到主干
-git merge origin/daily-7-24-显示打包包主页是nodejsHelloWorld/douban/src/index.html
+git merge origin/daily-7-24-不显示首页两个字
 
 推送主干
 git push origin master
