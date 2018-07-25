@@ -13,7 +13,7 @@ const getMenuContent = ({  path, name  }) => (
 )
 
 export default class LayoutDefault extends Component {
-  constructor () {
+  constructor (props) {
     super(props)
     this.state = {
       loading: false,
@@ -28,14 +28,14 @@ export default class LayoutDefault extends Component {
   componentWillUnMount () {
     window.__LOADING__ = null
   }
-
+  
   matchRouteName = this.props.match
-    ? navRoutes.find(e => e.name === this.props.match.parmas.type)
+    ? navRoutes.find(e => e.name === this.props.match.params.type)
       ? navRoutes.find(e => e.name === this.props.match.params.type).name
       : '全部'
     : navRoutes[0].name
 
-  toggleLoading = (stats = false, tip = '再等一下下嘛~') => {
+  toggleLoading = (status = false, tip = '再等一下下嘛~') => {
     this.setState({
       tip,
       loading: status
