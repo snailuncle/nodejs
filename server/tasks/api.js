@@ -1,14 +1,10 @@
-console.log(module.parent.filename+ "  调用了模块  ======")
-console.log(module.filename)
+// console.log(module.parent.filename+ "  调用了模块  ======")
+// console.log(module.filename)
 const mongoose=require('mongoose')
 const Movie=mongoose.model('Movie')
-console.log("Movie=",Movie)
 const Category=mongoose.model('Category')
-
-console.log("server/tasks/api.js")
-
 const rp=require('request-promise-native')
-console.log('rp=',rp)
+
 async function fetchMovie(item){
 
   const url=`http://api.douban.com/v2/movie/${item.doubanId}`
@@ -24,7 +20,6 @@ async function fetchMovie(item){
 }
 
 ;(async()=>{
-  console.log('api中的;(async()=>{运行了')
 //   let movies=[
 //     {
 //       doubanId: '2209573',
@@ -50,18 +45,11 @@ async function fetchMovie(item){
       {summary:''}
     ]
   })
-  //这里movies是空的
-  //----------------------------------------------------------------------------------
-  console.log("movies=",movies)
+
   for(let i=0;i<movies.length;i++){
   // for(let i=0;i<[movies[0]].length;i++){
-    console.log("movies的一次循环")
-    //-----------------------------------------------------------------
-    // process.exit()
-    //-----------------------------------------------------------------
-  // for(let i=0;i<movies.length;i++){
     let movie=movies[i]
-    console.log("server/tasks/api.js movie=",movie)
+    console.log("movie=",movie)
     let movieData=await fetchMovie(movie)
     if(movieData){
       let tags=movieData.tags || []
@@ -125,14 +113,11 @@ async function fetchMovie(item){
       tags.forEach(tag=>{
         movie.tags.push(tag.name)
       })
-      console.log(movie)
-      // await movie.save()
+      await movie.save()
 
     }
   }
 
-
-  console.log('api尾部')
 })()
 
 

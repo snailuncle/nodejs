@@ -2,9 +2,9 @@ console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const cp=require('child_process')
 const {resolve}=require('path')
-console.log("server/tasks/trailer.js")
 
 ;(async()=>{
+
   const script=resolve(__dirname,'../crawler/video')
   const child=cp.fork(script,[])
   let invoked=false
@@ -22,7 +22,7 @@ console.log("server/tasks/trailer.js")
 
   child.on('message',data=>{
     // https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg
-    console.log(data)
+    console.log("data=",data)
   })
 
 

@@ -1,5 +1,5 @@
-console.log(module.parent.filename+ "  调用了模块  ======")
-console.log(module.filename)
+// console.log(module.parent.filename+ "  调用了模块  ======")
+// console.log(module.filename)
 
 // 华北 1 可用区 C
 // 47.104.211.172(公)
@@ -71,16 +71,12 @@ console.log(module.filename)
 
 
 
-
-console.log("server/tasks/qiniu.js")
-
-
-let movies=[{
-  video:'http://vt1.doubanio.com/201806282323/bc9d39b0cd7a699b15353370e28bde4e/view/movie/M/301270263.mp4',
-  doubanId: '10574622',
-  poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg',
-  cover:'https://img3.doubanio.com/img/trailer/medium/1805269102.jpg'
-}]
+// let movies=[{
+//   video:'http://vt1.doubanio.com/201806282323/bc9d39b0cd7a699b15353370e28bde4e/view/movie/M/301270263.mp4',
+//   doubanId: '10574622',
+//   poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p1793720172.jpg',
+//   cover:'https://img3.doubanio.com/img/trailer/medium/1805269102.jpg'
+// }]
 
 const qiniu=require('qiniu')
 const nanoid=require('nanoid')
@@ -141,17 +137,18 @@ const uploadToQiniu=async(url,key)=>{
 //  cover:
 //   'background-image:url(https://img1.doubanio.com/img/trailer/medium/1433855508.jpg?)' }
 
+let movies=[{
+  video:'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+  doubanId: '1295644',
+  poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
+  cover:'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg'
+}]
 
+//nodejs从mongo中提取数据
+// let movies=
 
-
-
-  let movies=[{
-    video:'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
-    doubanId: '1295644',
-    poster:'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
-    cover:'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg'
-  }]
   movies.map(async movie=>{
+    console.log("传输到七牛之前的数据=",movie)
     if(movie.video && !movie.key){
       try{
         console.log('开始传video')
@@ -169,18 +166,28 @@ const uploadToQiniu=async(url,key)=>{
         if(posterData.key){
           movie.posterKey=posterData.key
         }
-        console.log(movie)
+        console.log("传输到七牛之后的数据=",movie)
 
-        // { video:
-        //   'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
-        //  doubanId: '1295644',
-        //  poster:
-        //   'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
-        //  cover:
-        //   'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg',
-        //  videoKey: 'http://video.xiaoxinfeng.com.cn/u29audFprGTTD967wO75h.mp4',
-        //  coverKey: 'http://video.xiaoxinfeng.com.cn/TE_dEtEGkFJRDUzREPL0m.jpg',
-        //  posterKey: 'http://video.xiaoxinfeng.com.cn/pz7vIINqnwRHUEbaqvpRT.png' }
+      //   传输到七牛之前的数据= { video:
+      //     'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+      //    doubanId: '1295644',
+      //    poster:
+      //     'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
+      //    cover:
+      //     'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg' }
+      //  开始传video
+      //  开始传cover
+      //  开始传poster
+      //  传输到七牛之后的数据= { video:
+      //     'http://vt1.doubanio.com/201807111237/ff7ba42c74781b4d1d830a393b7574b1/view/movie/M/301080757.mp4',
+      //    doubanId: '1295644',
+      //    poster:
+      //     'https://img3.doubanio.com/view/photo/l_ratio_poster/public/p511118051.jpg',
+      //    cover:
+      //     'https://img1.doubanio.com/img/trailer/medium/1433855508.jpg',
+      //    videoKey: 'CWk3lYDSgRBIozgeh0mU_.mp4',
+      //    coverKey: 'MEKhDV_SV1yEwapxlFs_s.jpg',
+      //    posterKey: '4Nm0jtWsuBjfq55F1MH26.png' }
 
 
 

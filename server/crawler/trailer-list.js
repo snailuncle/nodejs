@@ -1,7 +1,8 @@
-console.log(module.parent.filename+ "  调用了模块  ======")
-console.log(module.filename)
+// console.log(module.parent.filename+ "  调用了模块  ======")
+// console.log(module.filename)
 const puppeteer=require('puppeteer')
 const {resolve}=require('path')
+//按分值排序 6-10分
 const url='https://movie.douban.com/tag/#/?sort=T&range=6,10&tags='
 const sleep=time=>new Promise(resolve=>{
   setTimeout(resolve,time)
@@ -27,7 +28,7 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
     // executablePath: 'D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/crawler/chromium/chrome.exe',
     // executablePath: './chromium/chrome.exe',
     executablePath: chromePath,
-    // headless: false,
+    headless: false,
     args:['--no-sandbox'],
     dumpio:false
   })
@@ -74,7 +75,7 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
   })
 
   browser.close()
-  console.log(result)
+  // console.log(result)
   process.send({result})
   process.exit(0)
 })()

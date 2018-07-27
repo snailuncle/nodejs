@@ -1,8 +1,7 @@
 console.log(module.parent.filename+ "  调用了模块  ======")
 console.log(module.filename)
 const mongoose = require('mongoose')
-// const db = 'mongodb://localhost/douban-trailer'
-const db = 'mongodb://localhost/douban-test'
+const db = 'mongodb://localhost/douban-movie'
 const glob = require('glob')
 const { resolve } = require('path')
 mongoose.Promise = global.Promise

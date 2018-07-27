@@ -1,9 +1,16 @@
-console.log(module.parent.filename+ "  调用了模块  ======")
-console.log(module.filename)
+// console.log(module.parent.filename+ "  调用了模块  ======")
+// console.log(module.filename)
+
+// 这个杀手不太冷=https://movie.douban.com/subject/1295644/
+// 这个杀手不太冷  视频地址=https://movie.douban.com/trailer/108757/#content
+
+// 肖申克的救赎    视频地址=https://movie.douban.com/trailer/108756/#content
+
 const {resolve}=require('path')
 const puppeteer=require('puppeteer')
 const base='https://movie.douban.com/subject/'
 const doubanId="1295644"
+
 const videoBase=`https://movie.douban.com/trailer/108756`
 
 const sleep=time=>new Promise(resolve=>{
@@ -33,11 +40,12 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
     // executablePath: 'D:/nodejsDouban/nodejs/nodejsHelloWorld/douban/server/crawler/chromium/chrome.exe',
     // executablePath: './chromium/chrome.exe',
     executablePath: chromePath,
-    // headless: false,
+    headless: false,
     args:['--no-sandbox'],
     dumpio:false
   })
   const page=await browser.newPage()
+  console.log("将跳转到的地址=",base+doubanId)
   await page.goto(base+doubanId,{
     waitUntil:'networkidle2'
   })
@@ -49,7 +57,7 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
   //   process.exit(1) // To exit with a 'failure' code
   // });
 
-
+//爬取电影链接和封面图
   const result=await page.evaluate(()=>{
     var $=window.$
     var it=$('.related-pic-video')
@@ -87,6 +95,14 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
   //   cover:result.cover
   // }
 
+
+  // 'background-image:url(https://img1.doubanio.com/img/trailer/medium/1433855508.jpg?)' }
+  // console.log(str1.match(/http.*\.(?:\jpg|png)/)[0]);
+  let coverMatch=result.cover.match(/http.*\.(?:\jpg|png)/)
+  if(coverMatch){
+    result.cover=coverMatch[0]
+  }
+
   const data={
     video,
     doubanId,
@@ -95,9 +111,9 @@ var chromePath=resolve(__dirname,'./chromium/chrome.exe')
 
 
   browser.close()
-  // process.send(data)
-  // process.exit(0)
-  console.log("result=",data)
+  process.send(data)
+  process.exit(0)
+  // console.log("result=",data)
 })()
 
 
